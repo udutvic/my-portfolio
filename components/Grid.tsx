@@ -63,7 +63,7 @@ const items = [
     header: <Skeleton />,
   },
   {
-    title: "The Joy of Creation",
+    title: "The Joing of Creation",
     description: "Tech enthusiast with a passion for development.",
     header: <Skeleton />,
   },

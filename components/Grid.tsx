@@ -1,10 +1,9 @@
 "use client";
 
 import React from "react";
-import { BentoGrid, BentoGridItem } from './ui/BentoGrid'
+import { BentoGrid, BentoGridItem } from "./ui/BentoGrid";
 import IconCloud from "./IconCloud";
-import  {GlobeDemo}   from "./ui/GridGlobe";
-
+import { GlobeDemo } from "./ui/GridGlobe";
 
 const slugs = [
   "appwrite",
@@ -52,14 +51,16 @@ export function Grid() {
   );
 }
 
-
 const Skeleton: React.FC<React.PropsWithChildren<{}>> = ({ children }) => (
-  <div className="flex flex-1 w-full h-full min-h-[10rem] rounded-xl">{children}</div>
+  <div className="flex flex-1 w-full h-full min-h-[10rem] rounded-xl">
+    {children}
+  </div>
 );
 const items = [
   {
     title: "The Power of Communication",
-    description: "I prioritize client collaboration, fostering open communication ",
+    description:
+      "I prioritize client collaboration, fostering open communication ",
     header: <Skeleton />,
   },
   {
@@ -78,15 +79,16 @@ const items = [
   },
   {
     title: "The Spirit of Adventure",
-    description: "I\'m very flexible with time zone communications",
-    header: <Skeleton>
-      <GlobeDemo />
-    </Skeleton>,
+    description: "I'm very flexible with time zone communications",
+    header: (
+      <Skeleton>
+        <GlobeDemo />
+      </Skeleton>
+    ),
   },
   {
     title: "The Art of Design",
     description: "Currently building a JS Animation library",
     header: <Skeleton />,
   },
-  
 ];

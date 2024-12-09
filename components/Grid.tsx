@@ -51,7 +51,7 @@ export function Grid() {
   );
 }
 
-const Skeleton: React.FC<React.PropsWithChildren<{}>> = ({ children }) => (
+const Skeleton: React.FC<React.PropsWithChildren> = ({ children }) => (
   <div className="flex flex-1 w-full h-full min-h-[10rem] rounded-xl">
     {children}
   </div>
